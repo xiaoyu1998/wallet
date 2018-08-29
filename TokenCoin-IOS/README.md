@@ -2,6 +2,8 @@
 
 **PocketEOS** is an open-source EOS wallet APP,which is developed by [OracleChain.io](https://oraclechain.io).
 
+fork from PocketEOS https://github.com/OracleChain/PocketEOS-IOS.git
+
 **PocketEOS**是一个开源EOS钱包APP，由[OracleChain团队](https://oraclechain.io)研发。
 
 -------------------------------
