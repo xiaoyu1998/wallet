@@ -1,5 +1,5 @@
 
-fork from PocketEOS
+Fork from PocketEOS
 https://github.com/OracleChain/PocketEOS-Android.git
 
 # About/关于
