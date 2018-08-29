@@ -1,4 +1,4 @@
-fork from PocketEOS 
+Fork from PocketEOS 
 https://github.com/OracleChain/PocketEOS-IOS.git
 
 
