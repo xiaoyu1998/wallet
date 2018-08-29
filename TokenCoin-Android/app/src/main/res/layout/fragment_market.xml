@@ -1,0 +1,89 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_400"
+        android:scaleType="fitXY"
+        android:src="@mipmap/person_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_60"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/token_eos"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_19"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="@dimen/dimens_50"
+                android:layout_height="@dimen/dimens_50"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@mipmap/ic_add_pair"/>
+        </RelativeLayout>
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/spring"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.oraclechain.pocketeos.view.MyScrollview
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:fillViewport="true"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingTop="@dimen/dimens_5">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycle_icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingLeft="@dimen/dimens_15"
+                            android:paddingRight="@dimen/dimens_15"
+                            android:scrollbars="none"/>
+
+<!--                         <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimens_40"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/recycle_icon"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="@string/no_more"
+                            android:textColor="@color/gray_color"
+                            android:textSize="@dimen/dimens_12"/> -->
+                    </RelativeLayout>
+            </com.oraclechain.pocketeos.view.MyScrollview>
+        </com.liaoinstan.springview.widget.SpringView>
+    </LinearLayout>
+</FrameLayout>
